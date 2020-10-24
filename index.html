@@ -1,1 +1,77 @@
-Hello World
+<!DOCTYPE html>
+<html id="html">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Stylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+        
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <header class="header" style="background: url(http://165.22.197.251/img/header.jpeg);"></header>
+        <!-- <img id="plattegrond" src=""/> -->
+        <!-- <div id="container">
+        <h2 id="welkom">Welkom</h2>
+        <p id="uitleg">
+            Welkom bij deze testomgeving. U staat op het punt om een bepaalde kernfunctionaliteit te gaan testen. 
+            Hier volgt een klein stukje achtergrond informatie. Bij veel festivals is het gebruik van een plattegrond cruciaal. 
+            In deze testomgeving willen wij testen welke aspecten belangrijk zijn bij plattegronden.
+            Om een oplossing te vinden voor bezoekers van een festival ben ik aan het onderzoeken hoe de bezoekers gemakkelijk de weg kunnen vinden op het festival.
+            Tijdens dit experiment maakt u kennis met 3 verschillende plattegronden die op andere gebieden focussen. Per situatie krijgt u 5 vragen waarna u de juiste plek op de plattegrond dient aan te wijzen.
+            <br>
+            Ter informatie... 
+            Het doel van dit experiment is educatief, niet commercieel.
+            Data wordt in ongeanonimiseerde vorm alleen gebruikt voor doeleinden binnen het vak IPMEDTH.
+            U kunt niets fout doen, alle handelingen die u uitvoert zijn goed.
+
+            Om te navigeren is het belangrijk dat u uw antwoord op de vraag kunt insturen door te dubbelklikken op de plattegrond. Sommige plattegronden zijn interactief
+            en u kunt soms dus op de plattegrond klikken voor meer informatie over bijvoorbeeld een activiteit. Let dus op dat u niet per ongeluk dubbelklikt en uw antwoord instuurt.
+
+            Zodra u naar de volgende vraag gaat kunt u niet terug naar vorige vragen, probeer dus niet de pagina te refreshen.
+
+            Om de testresultaten te koppelen aan een testpersoon kunt u hier uw voornaam invullen.
+        </p>
+        </div> -->
+        <article class="welcome container">
+            <h1 class="title">Welkom!</h1>
+            <p class="desc">Welkom bij deze testomgeving. U staat op het punt om een bepaalde kernfunctionaliteit te gaan testen. 
+                Hier volgt een klein stukje achtergrond informatie. Bij veel festivals is het gebruik van een plattegrond cruciaal. 
+                In deze testomgeving willen wij testen welke aspecten belangrijk zijn bij plattegronden.</p>
+            <p class="desc"> Om een oplossing te vinden voor bezoekers van een festival ben ik aan het onderzoeken hoe de bezoekers gemakkelijk de weg kunnen vinden op het festival.
+                Tijdens dit experiment maakt u kennis met 3 verschillende plattegronden die op andere gebieden focussen. 
+                Per situatie krijgt u 5 vragen waarna u de juiste plek op de plattegrond dient aan te wijzen.</p>
+            <p class="desc">Je krijgt aan het begin eerst 3 testvragen waarin u de plattegronden kunt leren gebruiken. Neem hiervoor uw tijd zodat de functionaliteiten van de plattegronden bekend zijn.
+                Hier volgt een korte uitleg van de plattegronden.</p>
+            <p class="desc">Plattegrond 1: U kunt op de getallen op de kaart (enkel) klikken om informatie te zien over die specifieke activiteit. Klik nogmaals op een willekeurige plek om de informatie te sluiten.</p>
+            <p class="desc">Plattegrond 2: U kunt per categorie selecteren van welke activiteiten u een beschrijving wilt lezen in het lijstje. Dit doet u door categorieën aan of uit te vinken op de plattegrond.</p>
+            <p class="desc">Plattegrond 3: U ziet rechts van de plattegrond een lijst met alle activiteiten die beschikbaar zijn.</p><p>
+            </p><h2 class="subtitle padding-t-20">Ter informatie...</h2>
+            <ul class="list">
+                <li class="list__item"><i class="fas fa-check-circle"></i> Het doel van dit experiment is <span>educatief</span>, niet commercieel</li>
+                <li class="list__item"><i class="fas fa-check-circle"></i> Data wordt in ongeanonimiseerde vorm <span>alleen</span> gebruikt voor doeleinden binnen het vak IPMEDTH</li>
+                <li class="list__item"><i class="fas fa-check-circle"></i> U kunt niets fout doen, alle handelingen die u uitvoert zijn goed</li>
+            </ul>
+            <p class="desc padding-t-20">Om te navigeren is het belangrijk dat u uw antwoord op de vraag kunt insturen door te dubbelklikken op de plattegrond. Sommige plattegronden zijn interactief
+                en u kunt soms dus op de plattegrond klikken voor meer informatie over bijvoorbeeld een activiteit. Let dus op dat u niet per ongeluk dubbelklikt en uw antwoord instuurt.
+                Zodra u naar de volgende vraag gaat kunt u niet terug naar vorige vragen, probeer dus niet de pagina te refreshen.</p>
+            <p class="desc">Om de testresultaten te koppelen aan een testpersoon kunt u hier uw voornaam invullen.</p>
+            <div id="js--error" class="alert alert--error">
+                <span>Vul a.u.b. een naam in om verder te gaan</span>
+            </div>
+            <input id="js--naam" class="input" type="text" placeholder="Voornaam" name="testpersoon">
+            <a class="btn btn--hover" id="js--button">Ik wil beginnen</a>
+        </article>
+        <h1 id="Qtext"></h1>
+        <!-- <div id="eventPreview">
+            <img id="eventPreviewImg" src=""/>
+            
+            <p id="eventPreviewText"></p>
+        </div> -->
+        <footer class="footer">
+            <!-- Copyright © 2020 - Ard Kokkelkoren -->
+        </footer>
+    </body>
+</html>
+
+

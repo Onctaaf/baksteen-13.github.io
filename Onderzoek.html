@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html id="html">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Stylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Js.js"></script>
+        
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <img id="plattegrond" class="welcome" src=""/>
+        <h1 id="Qtext" class="desc"></h1>
+        <a class="btn btn--hover" id="DownloadButton" href="#">Download</a>
+        <div id="dubbelklik">
+            Dubbelklik op de juiste positie op de plattegrond.
+        </div>
+        <div id="part2">
+            <ul id="part3" class="selectionlist list">
+                <li class="list__item theater2"><i class="fas fa-check-circle theater3" onclick="categorie('theater')"></i> Toneel</li>
+                <li class="list__item muziek2"><i class="fas fa-check-circle muziek3" onclick="categorie('muziek')"></i> Muziek</li>
+                <li class="list__item film2"><i class="fas fa-check-circle film3" onclick="categorie('film')"></i> Film</li>
+                <li class="list__item techniek2"><i class="fas fa-check-circle techniek3" onclick="categorie('techniek')"></i> Techniek</li>
+                <li class="list__item Overige2"><i class="fas fa-check-circle Overige3" onclick="categorie('Overige')"></i> Overige</li>
+            </ul>
+        
+        <div id="scrollcontainer" class="list">
+            <table>
+                <tr class="list__item eventlist theater">
+                    <td>1</td>
+                    <td><i>Improvisatie</i></td>
+                    <td> Bij deze cursus ga je je improvisatie skills bij het theater verbeteren.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>2</td>
+                    <td><i>Stand up Comedy</i></td>
+                    <td>Bij deze cursus leer je hoe het is om Stand up Comedian te zijn.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>3</td>
+                    <td><i>Ballet</i></td>
+                    <td> Leer alles wat je maar wilt weten over ballet.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>4</td>
+                    <td><i>Circustheater</i></td>
+                    <td> Bekijk een voorstelling en probeer zelf ook wat stunts!</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>5</td>
+                    <td><i>Drama</i></td>
+                    <td> Wat is een drama voorstelling en waarom is het zo pakkend?</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>6</td>
+                    <td><i>Kindertheater</i></td>
+                    <td> Een show voor de kinderen.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>7</td>
+                    <td><i>Dans</i></td>
+                    <td> Bekijk een prachtige dansvoorstelling van een lokale dansgroep.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>8</td>
+                    <td><i>Poppenkast</i></td>
+                    <td> Een leuke poppenkast voorstelling voor jong en oud.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>9</td>
+                    <td><i>Pierre Bokma</i></td>
+                    <td> Pierre vertelt over het theater leven.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>10</td>
+                    <td><i>Wat is Theater?&nbsp;&nbsp;</i></td>
+                    <td> Waar komt het vandaan?</td>
+                </tr>
+                <tr class="list__item eventlist muziek">
+                    <td>11</td>
+                    <td><i>Djembé</i></td>
+                    <td> Leer alles over het afrikaanse drum instrument.</td>
+                </tr>
+                <tr class="list__item eventlist muziek">
+                    <td>12</td>
+                    <td><i>Piano</i></td>
+                    <td> Leer je eerste liedjes op de piano spelen.</td>
+                </tr>
+                <tr class="list__item eventlist muziek">
+                    <td>13</td>
+                    <td><i>Viool</i></td>
+                    <td> Luister naar een prachtig stuk van Vivaldi gespeeld op viool.</td>
+                </tr>
+                <tr class="list__item eventlist theater">
+                    <td>14</td>
+                    <td><i>Mime</i></td>
+                    <td> Bekijk een voorstelling en leer hoe mime is ontstaan.</td>
+                </tr>
+                <tr class="list__item eventlist muziek">
+                    <td>15</td>
+                    <td><i>Harp</i></td>
+                    <td> Hoe werkt een harp precies? Je leert het hier.</td>
+                </tr>
+                <tr class="list__item eventlist muziek">
+                    <td>16 </td>
+                    <td><i>Gitaar</i></td>
+                    <td> Leer akkoorden spelen op de gitaar.</td>
+                </tr>
+                <tr class="list__item eventlist muziek">
+                    <td>17 </td>
+                    <td><i>Rock</i></td>
+                    <td> Wat maakt een goed rock nummer?</td>
+                </tr>
+                <tr class="list__item eventlist muziek">
+                    <td>18 </td>
+                    <td><i>Klassiek</i></td>
+                    <td> aanschouw een prachtig orkest en leer over hoe het in elkaar zit.</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>19 &nbsp;&nbsp;</td>
+                    <td><i>Montage</i></td>
+                    <td> Wat gebeurt er tussen het maken van de film en de uitgave?</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>20 &nbsp;&nbsp;</td>
+                    <td><i>Stop-Motion</i></td>
+                    <td> Maak je eigen stop motion film!</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>21 &nbsp;&nbsp;</td>
+                    <td><i>Thriller</i></td>
+                    <td> Wat maakt het thriller genre zo spannend?</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>22 &nbsp;&nbsp;</td>
+                    <td><i>Scenario</i></td>
+                    <td> Hoe schrijf je een pakkend maar realistisch scenario.</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>23 &nbsp;&nbsp;</td>
+                    <td><i>Horror</i></td>
+                    <td> Kijk een short film over horror.</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>24 &nbsp;&nbsp;</td>
+                    <td><i>Continuïteit</i></td>
+                    <td> Hoe zorg je dat de continuiteit van een film goed zit?</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>25 &nbsp;&nbsp;</td>
+                    <td><i>Regie</i></td>
+                    <td> Leer hoe de filmindustrie bij elkaar blijft plakken.</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>26 &nbsp;&nbsp;</td>
+                    <td><i>Uitgave</i></td>
+                    <td> Hoe geef je een film uit?</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>27 &nbsp;&nbsp;</td>
+                    <td><i>Vogelhuisje</i></td>
+                    <td> Maak je eigen vogelhuisje voor thuis.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>28 &nbsp;&nbsp;</td>
+                    <td><i>3D Printen</i></td>
+                    <td>Ontwerp je eigen 3D model en print deze uit.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>29 &nbsp;&nbsp;</td>
+                    <td><i>Zagen</i></td>
+                    <td>Leer eindelijk de juiste techniek voor het zagen.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>30 &nbsp;&nbsp;</td>
+                    <td><i>Houtverbindingen</i></td>
+                    <td>Welke houtverbindingen zijn er en welke is perfect voor jouw project.</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>31 &nbsp;&nbsp;</td>
+                    <td><i>Dwayne Johnson</i></td>
+                    <td>Dwayne Johnson vertelt over zijn ervaringen in de filmindustrie.</td>
+                </tr>
+                <tr class="list__item eventlist film">
+                    <td>32 &nbsp;&nbsp;</td>
+                    <td><i>Emma Watson</i></td>
+                    <td>Emma Watson legt uit hoe het was om in Harry Potter te spelen.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>33 &nbsp;&nbsp;</td>
+                    <td><i>Automonteur</i></td>
+                    <td>Wat doet een automonteur?</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>34 &nbsp;&nbsp;</td>
+                    <td><i>Biotechnologie</i></td>
+                    <td> Wat is de toekomst?</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>35 &nbsp;&nbsp;</td>
+                    <td><i>Bio-engineering</i></td>
+                    <td> bio-engineering en hoe het jouw leven beïnvloedt.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>36 &nbsp;&nbsp;</td>
+                    <td><i>Timmeren</i></td>
+                    <td> Hoe hamer jij in 2 slagen een spijker in het hout?</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>37 &nbsp;&nbsp;</td>
+                    <td><i>Infrastructuur</i></td>
+                    <td>waar gaat het fout?</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>38 &nbsp;&nbsp;</td>
+                    <td><i>Isolatietechniek</i></td>
+                    <td>Wat is de beste isolatietechniek voor het bouwen van een huis?</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>39 &nbsp;&nbsp;</td>
+                    <td><i>Metaalbewerking</i></td>
+                    <td>metaalbewerking en waarom jij het moet leren.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>40 &nbsp;&nbsp;</td>
+                    <td><i>Bier brouwen</i></td>
+                    <td>Doe het zelf bier brouwen voor thuis.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>41 &nbsp;&nbsp;</td>
+                    <td><i>Natuurkunde</i></td>
+                    <td>Beginners les over natuurkunde.</td>
+                </tr>
+                <tr class="list__item eventlist techniek">
+                    <td>42 &nbsp;&nbsp;</td>
+                    <td><i>Metseltechnieken</i></td>
+                    <td>Metseltechnieken voor het bouwen van een muurtje.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>43 &nbsp;&nbsp;</td>
+                    <td><i>EHBO</i></td>
+                    <td> In deze EHBO cursus leer jij alles wat je moet weten in geval van nood.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>44 &nbsp;&nbsp;</td>
+                    <td><i>Bloemstuk</i></td>
+                    <td>Maak het mooiste bloemstuk voor jou in huis.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>45 &nbsp;&nbsp;</td>
+                    <td><i>Mozaïek</i></td>
+                    <td>Maak een mooi stukje mozaïek voor aan de muur.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>46 &nbsp;&nbsp;</td>
+                    <td><i>Kerststukje</i></td>
+                    <td>Maak je eigen kerststukje voor op tafel.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>47 &nbsp;&nbsp;</td>
+                    <td><i>Bob Ross</i></td>
+                    <td>Leer schilderen in de stijl van Bob Ross.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>48 &nbsp;&nbsp;</td>
+                    <td><i>Outlook</i></td>
+                    <td>Leer nu outlook gebruiken voor je volgende baan of eigengebruik.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>49 &nbsp;&nbsp;</td>
+                    <td><i>Photoshop</i></td>
+                    <td>Leer de basis van photoshop om je eigen plaatjes te bewerken.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>50 &nbsp;&nbsp;</td>
+                    <td><i>Logo Design</i></td>
+                    <td>Hoe ontwerp je een eigen logo?</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>51 &nbsp;&nbsp;</td>
+                    <td><i>Moppen tappen</i></td>
+                    <td>Leer hoe je de besten moppen kunt tappen op de juiste momenten.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>52 &nbsp;&nbsp;</td>
+                    <td><i>Graffiti</i></td>
+                    <td>Schrijf je eigen initialen in graffiti.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>53 &nbsp;&nbsp;</td>
+                    <td><i>Drone vliegen</i></td>
+                    <td>Vlieg een eigen drone voor de beste shots.</td>
+                </tr>
+                <tr class="list__item eventlist Overige">
+                    <td>54 &nbsp;&nbsp;</td>
+                    <td><i>Complimentjes geven</i></td>
+                    <td>Leer goede complimenten geven voor de beste teamspirit.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+        <li id="eventPreview" class="welcome">
+            <img id="eventPreviewImg" src=""/>
+            
+            <h1 id="eventPreviewText" class="desc"></h1>
+        </li>
+        
+
+    </body>
+    </html>
+    
